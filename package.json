@@ -1,0 +1,31 @@
+{
+  "name": "lighthouse-automatic",
+  "version": "0.0.2",
+  "description": "Run & Report Google lighthouse (performance, accessibility, pwa tests) metrics against your own websites/applications, lighthouse-automatic enables you the developer to ensure you're websites are performing as expected continuosly ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dj10dj100/lighthouse-automatic.git"
+  },
+  "keywords": [
+    "google",
+    "lighthouse",
+    "automatic",
+    "performance",
+    "accessibility",
+    "pwa",
+    "tests",
+    "service",
+    "node",
+    "backend"
+  ],
+  "author": "dj10dj100",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dj10dj100/lighthouse-automatic/issues"
+  },
+  "homepage": "https://github.com/dj10dj100/lighthouse-automatic#readme"
+}
