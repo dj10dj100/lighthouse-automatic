@@ -1,8 +1,7 @@
-const Application = require("../src/app");
+const start = require('../src/app').start;
 
-describe("Application ", () => {
-  it("Starts", () => {
-    expect(Application.start).toBeDefined();
-    expect(Application.start()).toBeUndefined();
-  });
+describe('Application ', () => {
+    it('Starts', () => {
+        expect(start).toBeDefined();
+    });
 });

@@ -1,74 +1,88 @@
 {
-  "name": "lighthouse-automatic",
-  "version": "0.0.2",
-  "description":
-    "Run & Report Google lighthouse (performance, accessibility, pwa tests) metrics against your own websites/applications, lighthouse-automatic enables you the developer to ensure you're websites are performing as expected continuosly ",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "start": "node ./index.js",
-    "start:debug": "node --inspect ./index.js",
-    "run": ""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dj10dj100/lighthouse-automatic.git"
-  },
-  "keywords": [
-    "google",
-    "lighthouse",
-    "automatic",
-    "performance",
-    "accessibility",
-    "pwa",
-    "tests",
-    "service",
-    "node",
-    "backend"
-  ],
-  "lighthouse-automatic": {
-    "urls": [
-      {
-        "url": "https://www.tradera.com/",
-        "pageName": "Tradera-Homepage"
-      },
-      {
-        "url": "https://www.tradera.com/search?q=**",
-        "pageName": "Tradera-Search"
-      },
-      {
-        "url": "https://www.tradera.com/login",
-        "pageName": "Tradera-login"
-      }
+    "name": "lighthouse-automatic",
+    "version": "1.0.0",
+    "description":
+        "Run & Report Google lighthouse (performance, accessibility, pwa tests) metrics against your own websites/applications, lighthouse-automatic enables you the developer to ensure you're websites are performing as expected continuosly ",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest",
+        "test:watch": "jest --watch",
+        "start": "node ./index.js",
+        "start:debug": "node --inspect ./index.js",
+        "run": "",
+        "precommit": "jest --bail"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dj10dj100/lighthouse-automatic.git"
+    },
+    "bin": "index.js",
+    "keywords": [
+        "google",
+        "lighthouse",
+        "automatic",
+        "performance",
+        "accessibility",
+        "pwa",
+        "tests",
+        "service",
+        "node",
+        "backend"
     ],
-    "runOnce": true,
-    "minutes": "5",
-    "endpoint": "",
-    "log": false
-  },
-  "author": "dj10dj100",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dj10dj100/lighthouse-automatic/issues"
-  },
-  "homepage": "https://github.com/dj10dj100/lighthouse-automatic#readme",
-  "dependencies": {
-    "babel-core": "^6.26.0",
-    "babel-jest": "^22.1.0",
-    "chalk": "^2.3.0",
-    "commander": "^2.13.0",
-    "exit": "^0.1.2",
-    "fs-extra": "^5.0.0",
-    "lighthouse": "^2.8.0",
-    "node-cmd": "^3.0.0",
-    "node-command-line": "^1.0.2",
-    "node-cron": "^1.2.1",
-    "path": "^0.12.7",
-    "prettier": "^1.10.2",
-    "regenerator-runtime": "^0.11.1"
-  },
-  "devDependencies": {
-    "jest": "^22.1.4"
-  }
+    "lighthouse-automatic": {
+        "urls": [
+            {
+                "url": "https://www.tradera.com/",
+                "pageName": "Tradera-Homepage"
+            },
+            {
+                "url": "https://www.tradera.com/search?q=**",
+                "pageName": "Tradera-Search"
+            },
+            {
+                "url": "https://www.tradera.com/login",
+                "pageName": "Tradera-login"
+            }
+        ],
+        "runOnce": true,
+        "minutes": "5",
+        "endpoint": "",
+        "log": false
+    },
+    "author": "dj10dj100",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/dj10dj100/lighthouse-automatic/issues"
+    },
+    "prettier": {
+        "useTabs": false,
+        "tabWidth": 4,
+        "singleQuote": true,
+        "trailingComma": "none",
+        "bracketSpacing": true,
+        "jsxBracketSameLine": true,
+        "arrowParens": "avoid"
+    },
+    "homepage": "https://github.com/dj10dj100/lighthouse-automatic#readme",
+    "dependencies": {
+        "babel-core": "^6.26.0",
+        "babel-jest": "^22.1.0",
+        "chalk": "^2.3.0",
+        "commander": "^2.13.0",
+        "cwd": "^0.10.0",
+        "exit": "^0.1.2",
+        "fs-extra": "^5.0.0",
+        "husky": "^0.14.3",
+        "lighthouse": "^2.8.0",
+        "node-cmd": "^3.0.0",
+        "node-command-line": "^1.0.2",
+        "node-cron": "^1.2.1",
+        "path": "^0.12.7",
+        "prettier": "^1.10.2",
+        "promise": "^8.0.1",
+        "regenerator-runtime": "^0.11.1"
+    },
+    "devDependencies": {
+        "jest": "^22.1.4"
+    }
 }
