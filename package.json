@@ -1,8 +1,7 @@
 {
     "name": "lighthouse-automatic",
-    "version": "1.0.0",
-    "description":
-        "Run & Report Google lighthouse (performance, accessibility, pwa tests) metrics against your own websites/applications, lighthouse-automatic enables you the developer to ensure you're websites are performing as expected continuosly ",
+    "version": "1.0.1",
+    "description": "Run & Report Google lighthouse (performance, accessibility, pwa tests) metrics against your own websites/applications, lighthouse-automatic enables you the developer to ensure you're websites are performing as expected continuosly ",
     "main": "index.js",
     "scripts": {
         "test": "jest",
