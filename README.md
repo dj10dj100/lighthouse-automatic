@@ -1,3 +1,11 @@
+[![npm](https://img.shields.io/npm/dm/lighthouse-automatic.svg)]()
+[![npm](https://img.shields.io/npm/dt/lighthouse-automatic.svg)]()
+[![npm](https://img.shields.io/npm/v/lighthouse-automatic.svg)]()
+
+![alt Output][Lighthouse]
+
+[Lighthouse]: carbon.png "Lighthouse Configuration"
+
 # 1. lighthouse-automatic
 
 Google lighthouse as a service, automatically run lighthouse tasks in the background and profile your webpages
@@ -74,5 +82,6 @@ Configuration for the application is handled by properties in `package.json`:
 **sup** Currently results are only reported in .json format
 
 # 6. Next release
+
 * Post/Curl results to external endpoint
 * Run tests every X minutes
