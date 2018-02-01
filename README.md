@@ -1,10 +1,11 @@
 [![npm](https://img.shields.io/npm/dm/lighthouse-automatic.svg)]()
 [![npm](https://img.shields.io/npm/dt/lighthouse-automatic.svg)]()
 [![npm](https://img.shields.io/npm/v/lighthouse-automatic.svg)]()
+[![Build Status](https://travis-ci.org/dj10dj100/lighthouse-automatic.svg?branch=master)](https://travis-ci.org/dj10dj100/lighthouse-automatic)
 
-![alt Output][Lighthouse]
+![alt Output][lighthouse]
 
-[Lighthouse]: carbon.png "Lighthouse Configuration"
+[lighthouse]: carbon.png 'Lighthouse Configuration'
 
 # 1. lighthouse-automatic
 
