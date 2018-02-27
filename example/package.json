@@ -1,0 +1,30 @@
+{
+    "name": "example-project",
+    "scripts": {
+        "start": "lighthouse-automatic"
+    },
+    "dependencies": {},
+    "lighthouse-automatic": {
+        "urls": [
+            {
+                "url": "https://www.tradera.com/",
+                "pageName": "Tradera-Homepage"
+            },
+            {
+                "url": "https://www.tradera.com/search?q=**",
+                "pageName": "Tradera-Search"
+            },
+            {
+                "url": "https://www.tradera.com/login",
+                "pageName": "Tradera-login"
+            }
+        ],
+        "runOnce": true,
+        "minutes": "5",
+        "endpoint": "",
+        "log": false
+    },
+    "devDependencies": {
+        "lighthouse-automatic": "1.0.3"
+    }
+}
