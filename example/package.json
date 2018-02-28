@@ -21,6 +21,7 @@
         ],
         "runOnce": true,
         "minutes": "5",
+        "output": "json",
         "endpoint": "",
         "log": false
     },

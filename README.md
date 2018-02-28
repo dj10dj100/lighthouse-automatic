@@ -77,9 +77,11 @@ I suggest adding to npm scripts (see example project `scripts.start`) for ease o
 
 Head to `<your-project-directory>/lighthouse-reports` and the test results will be available to collect.
 
-**sup**Currently results are only reported in .json format
+<sup> Currently results are only reported in .json format</sup>
 
 # 5. Options
+
+* `output`: "string" choose the output filetype, possibilities are `html` or `json`
 
 * `"urls"`: [Array] of {URL} objects, used to describe which urls to run lighthouse against;
 

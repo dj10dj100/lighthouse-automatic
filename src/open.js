@@ -15,11 +15,13 @@ const Open = async properties => {
     await fs.ensureDir(reportLocation);
     const testName = `${Date.now()}-${properties.pageName}`;
     await log(chalk.green(`Opening: ${chalk.blue(properties.url)}`));
-
+    console.log(reportLocation);
     return await cmd.get(
-        `lighthouse ${
-            properties.url
-        } --output=json --chrome-flags="--headless"`,
+        `lighthouse ${properties.url} ${
+            config.output === 'html'
+                ? `--output-path=${reportLocation}/${testName}.html`
+                : '--output=json'
+        } --chrome-flags="--headless"`,
         (err, data, stderr) => {
             if (config.log) {
                 if (err) {
@@ -27,10 +29,20 @@ const Open = async properties => {
                 }
                 log(chalk.green(stderr));
             }
-
-            const fileName = path.resolve(reportLocation, `${testName}.json`);
-            fs.writeJsonSync(fileName, data);
-            log(chalk.green(`Completed: ${chalk.white(testName)}.report.json`));
+            if (config.output === 'json') {
+                const fileName = path.resolve(
+                    reportLocation,
+                    `${testName}.json`
+                );
+                fs.writeJsonSync(fileName, data);
+                log(
+                    chalk.green(
+                        `Completed: ${chalk.white(testName)}.report.json`
+                    )
+                );
+            } else {
+                log(chalk.green(`Completed: ${chalk.white(testName)}`));
+            }
         }
     );
 };
