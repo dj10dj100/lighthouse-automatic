@@ -43,7 +43,7 @@
                 "pageName": "Tradera-login"
             }
         ],
-        "output": "json",
+        "output": "html",
         "runOnce": true,
         "log": false
     },

@@ -4,12 +4,10 @@ const Open = require('./open');
 const Promise = require('promise');
 const log = console.log;
 
-const runAll = async () =>
-    await Promise.all(
-        config.urls.map(async url => {
-            const user = await Open(url);
-        })
-    );
+const runAll = () =>
+    config.urls.map(async url => {
+        const user = await Open(url);
+    });
 
 const start = async () => {
     //run tests once
@@ -17,7 +15,7 @@ const start = async () => {
         log(chalk.green(`Tests running: ${chalk.blue('Once')}`));
         const results = await runAll();
     }
-    
+
     //run all tests
     if (config.minutes && !config.runOnce) {
         log(

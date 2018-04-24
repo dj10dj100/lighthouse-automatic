@@ -15,7 +15,6 @@ const Open = async properties => {
     await fs.ensureDir(reportLocation);
     const testName = `${Date.now()}-${properties.pageName}`;
     await log(chalk.green(`Opening: ${chalk.blue(properties.url)}`));
-    console.log(reportLocation);
     return await cmd.get(
         `lighthouse ${properties.url} ${
             config.output === 'html'
